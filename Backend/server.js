@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/shophub')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://siddharthchavanke920_db_user:HnFyvn3YleN96GQz@cluster1.biquuic.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1')
   .then(() => console.log('✅ MongoDB Connected Successfully'))
   .catch(err => console.error('❌ MongoDB Connection Error:', err));
 
