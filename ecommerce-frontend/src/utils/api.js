@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-// This is correct. It gets the URL from the environment.
-const API_URL = process.env.REACT_APP_API_URL;
-axios.post(`${API_URL}/api/auth/register`, userData); // Update with your backend URL
+const API_BASE_URL = 'http://localhost:5000/api'; // Update with your backend URL
 
 const api = axios.create({
   baseURL: API_BASE_URL,
