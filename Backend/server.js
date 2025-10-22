@@ -5,9 +5,17 @@ const dotenv = require('dotenv');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
+
 dotenv.config();
 
 const app = express();
+
+const frontendURL = 'https://cherishindia-ecommerce-website-1.onrender.com';
+
+// Setup CORS
+app.use(cors({
+  origin: frontendURL
+}));
 
 // Middleware
 app.use(cors({
