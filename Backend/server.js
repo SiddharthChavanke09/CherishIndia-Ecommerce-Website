@@ -10,9 +10,7 @@ dotenv.config();
 
 const app = express();
 
-const frontendURL = 'https://cherishindia-ecommerce-website-1.onrender.com';
-
-// Setup CORS
+const frontendURL = "https://cherishindia-ecommerce-website-1.onrender.com";
 app.use(cors({
   origin: frontendURL
 }));
